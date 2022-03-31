@@ -1,2 +1,22 @@
 <button (click) = "getName()">Click Me</button>
 <button (click) = "findName('Iqbal')">found name</button>
+<br />
+<br />
+
+<!--input events -->
+<!--
+    * keyup
+    * keydown
+    * blur
+    * input
+-->
+<input type="text" #box placeholder="event keyup" (keyup)="getData(box.value)" />
+<br />
+<br />
+<input type="text" #box1 placeholder="event keydown" (keydown)="getData(box1.value)" />
+<br />
+<br />
+<input type="text" #box2 placeholder="event keyblur" (blur)="getData(box2.value)" />
+<br>
+<br>
+<input type="text" #box3 placeholder="event input" (input)="getData(box3.value)" />

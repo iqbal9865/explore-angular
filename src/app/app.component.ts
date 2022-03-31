@@ -14,5 +14,8 @@ export class AppComponent {
   findName (name: string) {
     alert(name)
   }
+  getData (data: string) {
+    console.log(data)
+  }
 }
 
