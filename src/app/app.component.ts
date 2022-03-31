@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'explore-angular';
   data = 'Code Step By Step';
+  getName () {
+    console.warn('Function Called')
+  }
+  findName (name: string) {
+    alert(name)
+  }
 }
 
