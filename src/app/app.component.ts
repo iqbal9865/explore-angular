@@ -8,14 +8,28 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'explore-angular';
   data = 'Code Step By Step';
-  getName () {
-    console.warn('Function Called')
-  }
-  findName (name: string) {
-    alert(name)
-  }
+  // getName () {
+  //   console.warn('Function Called')
+  // }
+  // findName (name: string) {
+  //   alert(name)
+  // }
+  displayValue: string =  '';
+  anotherDisplayValue: string = '';
   getData (data: string) {
-    console.log(data)
+    this.displayValue = data;
+  }
+  getAnotherData (data: string) {
+    this.anotherDisplayValue = data;
+  }
+  count = 0;
+  counter (type: string) {
+    if(type == 'sub') {
+      this.count--;
+    }
+    else {
+      this.count++;
+    }
   }
 }
 
