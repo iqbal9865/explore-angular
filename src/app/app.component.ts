@@ -35,14 +35,19 @@ export class AppComponent {
   //     this.count++;
   //   }
   // }
-  userData: any = {}
-  getData(data: NgForm) {
-    console.log(data)
-    this.userData = data;
-  }
-  show : boolean = false;
-  toggleElement () {
-    this.show = !this.show;
-  }
+  // userData: any = {}
+  // getData(data: NgForm) {
+  //   console.log(data)
+  //   this.userData = data;
+  // }
+  // show : boolean = false;
+  // toggleElement () {
+  //   this.show = !this.show;
+  // }
+  // tasklist:any[] = []
+  // getTask (task:string) {
+  //   this.tasklist.push({id: this.tasklist.length, name: task})
+  //   console.log(this.tasklist)
+  // }
 }
 
