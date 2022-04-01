@@ -53,8 +53,8 @@
 <!-- <h1 *ngFor = "let user of users"> {{ user }} </h1> -->
 
 
-<!-- <app-header></app-header>
-<app-top-header></app-top-header> -->
+<!-- <app-header></app-header> -->
+<!-- <app-top-header></app-top-header> -->
 
 <!-- <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
   <br>
@@ -114,4 +114,7 @@
   </div>
 </section> -->
 
-
+<app-header [item]="currentItem" (newItemEvent)="addItem($event)"></app-header>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>

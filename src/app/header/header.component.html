@@ -1,15 +1,12 @@
-<header>
-  <div class="container">
-    <nav>
-      <img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" alt="app-logo">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
+<p>
+  Today's item: {{item}}
+</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <input class="form-control mx-5" type="text" id="item-input" #newItem>
+    <br>
+    <button type="button" class="btn btn-info mx-5" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
   </div>
-</header>
+</div>

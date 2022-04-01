@@ -57,4 +57,12 @@ export class AppComponent {
   // deleteTask(id: any) {
   //   this.tasklist = this.tasklist.filter(task => task.id !== id)
   // }
+
+  currentItem = 'Television';
+
+  items = ['item1', 'item2', 'item3', 'item4'];
+
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
 }
