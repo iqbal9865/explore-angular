@@ -86,3 +86,32 @@
 <ul *ngFor="let item of tasklist">
   <li>{{ item.name }}</li>
 </ul> -->
+
+
+
+<!-- lets develop a to do list application with angular and bootstrap -->
+
+<section>
+  <div class="container">
+    <div class="row mt-5">
+      <h2 class="text-center"> TO DO List Application </h2>
+      <div class="col-md-6 px-5">
+        <input type="text" placeholder="Assign Task" #task class="form-control mt-4 mb-3" />
+        <button class="btn btn-success" (click)="addTask(task.value)">
+          Add Task
+        </button>
+      </div>
+      <div class="col-md-6 px-5 mt-4">
+        <h4>List Of Tasks</h4>
+        <div *ngFor="let item of tasklist">
+          <ul class="d-flex  align-items-center">
+            <li>{{ item.name }} </li>
+            <button class="btn btn-danger mx-3" (click) = "deleteTask(item.id)">Delete</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
