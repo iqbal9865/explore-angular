@@ -50,12 +50,11 @@ export class AppComponent {
   //   console.log(this.tasklist)
   // }
 
-  tasklist : any[] = []
-  addTask (task:string) {
-    this.tasklist.push({ id: this.tasklist.length, name : task })
-  }
-  deleteTask(id: any) {
-    this.tasklist = this.tasklist.filter(task => task.id !== id)
-  }
+  // tasklist : any[] = []
+  // addTask (task:string) {
+  //   this.tasklist.push({ id: this.tasklist.length, name : task })
+  // }
+  // deleteTask(id: any) {
+  //   this.tasklist = this.tasklist.filter(task => task.id !== id)
+  // }
 }
-
