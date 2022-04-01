@@ -1,0 +1,28 @@
+header{
+  background-color: #0D47A1;
+}
+.container {
+  padding: 0 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav img {
+  width: 10rem;
+  padding: 1rem;
+}
+li {
+  list-style: none;
+  padding: 1rem 1.5rem;
+}
+li > a{
+  color: white;
+  text-decoration: none;
+}

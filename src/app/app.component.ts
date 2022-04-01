@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'explore-angular';
-  users = ["habib", "Kabir", "Nixam", "Monu", "Mixin"];
+  // users = ["habib", "Kabir", "Nixam", "Monu", "Mixin"];
   // data = 'Code Step By Step';
   // name = 'iqbal';
   // disable = false;
