@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -35,5 +35,14 @@ export class AppComponent {
   //     this.count++;
   //   }
   // }
+  userData: any = {}
+  getData(data: NgForm) {
+    console.log(data)
+    this.userData = data;
+  }
+  show : boolean = false;
+  toggleElement () {
+    this.show = !this.show;
+  }
 }
 

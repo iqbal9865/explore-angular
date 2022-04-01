@@ -56,3 +56,24 @@
 <!-- <app-header></app-header>
 <app-top-header></app-top-header> -->
 
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+  <br>
+  <input type="text" name="user" placeholder="Enter Your Name" ngModel /> <br> <br>
+  <input type="email" name="email" placeholder="Enter Your Email" ngModel /> <br> <br>
+  <input type="password" name="password" placeholder="Enter Your Password" ngModel /> <br> <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<div>
+  <p> username:  {{ userData.user }} </p>
+  <p> user email:  {{ userData.email }} </p>
+  <p> user password: {{ userData.password }} </p>
+</div>
+
+<div>
+  <h4>Toggle Items</h4>
+  <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium beatae iste excepturi impedit vel atque molestiae blanditiis dolores, sint culpa voluptatum. Ipsa libero laudantium necessitatibus placeat recusandae obcaecati quam repudiandae distinctio in? At a optio nisi excepturi quaerat illum! Inventore ex sed molestiae aperiam quas? Doloremque officiis, ea itaque perspiciatis cum amet error placeat ducimus, numquam optio quos eum ut. <span *ngIf="show">Nihil nobis maiores iusto illum animi dolorem in ab iure qui fuga velit, numquam, quos voluptates accusamus vitae excepturi ipsam reprehenderit adipisci ipsa! Eius vero beatae esse? Cum adipisci voluptatem sed sit rerum recusandae quaerat iure facilis repellendus impedit.</span><button (click)="toggleElement()">See More...</button></p>
+  <br>
+
+</div>
+
