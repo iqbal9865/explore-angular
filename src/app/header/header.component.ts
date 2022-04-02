@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Input() item = '';
-  @Output() newItemEvent = new EventEmitter<string>();
+  @Output() newItemEvent = new EventEmitter();
 
   addNewItem(value: string) {
     this.newItemEvent.emit(value);
