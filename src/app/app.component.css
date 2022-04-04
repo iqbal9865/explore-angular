@@ -4,6 +4,9 @@ form .ng-valid {
 form .ng-invalid {
   border-left: 2px solid red;
 }
+.success {
+  color: green;
+}
 .error {
   color: red;
 }

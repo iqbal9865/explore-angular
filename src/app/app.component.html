@@ -128,6 +128,7 @@
     <span *ngIf="email.invalid && email.touched" class="error">Email Field is Required</span>
     <br>
     <button type="submit" class="btn btn-primary">Submit</button> <br>
+    <span class="success">{{ formSubmitSuccess }}</span>
     <span class="error">{{ displayFailedSubmit }}</span>
   </form>
 </div>

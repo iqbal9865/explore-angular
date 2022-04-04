@@ -65,13 +65,16 @@ export class AppComponent {
   // addItem(newItem: string) {
   //   this.items.push(newItem);
   // }
+  formSubmitSuccess = '';
   displayFailedSubmit = '';
   onSubmit(data: any) {
     if(data.username && data.email) {
-      console.log(data)
+      console.log(data);
+      this.formSubmitSuccess = 'Form Submit Successfully';
       this.displayFailedSubmit = '';
     }
     else {
+      this.formSubmitSuccess = '';
       this.displayFailedSubmit = "All Field Must Be Fill Up";
     }
   }
