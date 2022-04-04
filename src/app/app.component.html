@@ -118,3 +118,16 @@
 <ul>
   <li *ngFor="let item of items">{{item}}</li>
 </ul> -->
+
+<div class="col-md-6 m-5">
+  <form #templateForm="ngForm" (ngSubmit)=onSubmit(templateForm.value)>
+    <input #name="ngModel" type="text" placeholder="Enter Your Name" class="form-control" ngModel name="username" required="">
+    <span *ngIf="name.invalid && name.touched" class="error">Name Field is Required</span>
+    <br>
+    <input #email="ngModel" type="email" placeholder="Enter Your Email" class="form-control" ngModel name="email" required="">
+    <span *ngIf="email.invalid && email.touched" class="error">Email Field is Required</span>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button> <br>
+    <span class="error">{{ displayFailedSubmit }}</span>
+  </form>
+</div>
