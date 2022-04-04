@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './users/users.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    UsersComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

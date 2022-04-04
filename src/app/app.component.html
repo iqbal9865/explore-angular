@@ -119,7 +119,7 @@
   <li *ngFor="let item of items">{{item}}</li>
 </ul> -->
 
-<div class="col-md-6 m-5">
+<!-- <div class="col-md-6 m-5">
   <form #templateForm="ngForm" (ngSubmit)=onSubmit(templateForm.value)>
     <input #name="ngModel" type="text" placeholder="Enter Your Name" class="form-control" ngModel name="username" required>
     <span *ngIf="name.invalid && name.touched" class="error">Name Field is Required</span>
@@ -131,4 +131,19 @@
     <span class="success">{{ formSubmitSuccess }}</span>
     <span class="error">{{ displayFailedSubmit }}</span>
   </form>
+</div> -->
+
+<div>
+  <a routerLink="/">
+    Home
+  </a>
+  <a routerLink="about">
+    About
+  </a>
+  <a routerLink="users">
+    Users
+  </a>
 </div>
+<router-outlet></router-outlet>
+
+

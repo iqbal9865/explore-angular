@@ -65,25 +65,25 @@ export class AppComponent {
   // addItem(newItem: string) {
   //   this.items.push(newItem);
   // }
-  formSubmitSuccess = '';
-  displayFailedSubmit = '';
-  onSubmit(data: any) {
-    if(data.username && data.email) {
-      if(data.username.length >= 5 && data.email.length >=8) {
-        console.log(data)
-        this.formSubmitSuccess = 'Form Submit Successfully';
-        this.displayFailedSubmit = '';
-      }
-      else {
-        console.log(data)
-        this.formSubmitSuccess = '';
-        this.displayFailedSubmit = "Minimum 5 char for name & 8 char for email";
-      }
-    }
-    else {
-      console.log(data)
-      this.formSubmitSuccess = '';
-      this.displayFailedSubmit = "All Field Must Be Fill Up";
-    }
-  }
+  // formSubmitSuccess = '';
+  // displayFailedSubmit = '';
+  // onSubmit(data: any) {
+  //   if(data.username && data.email) {
+  //     if(data.username.length >= 5 && data.email.length >=8) {
+  //       console.log(data)
+  //       this.formSubmitSuccess = 'Form Submit Successfully';
+  //       this.displayFailedSubmit = '';
+  //     }
+  //     else {
+  //       console.log(data)
+  //       this.formSubmitSuccess = '';
+  //       this.displayFailedSubmit = "Minimum 5 char for name & 8 char for email";
+  //     }
+  //   }
+  //   else {
+  //     console.log(data)
+  //     this.formSubmitSuccess = '';
+  //     this.displayFailedSubmit = "All Field Must Be Fill Up";
+  //   }
+  // }
 }
