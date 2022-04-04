@@ -13,7 +13,7 @@ const routes: Routes = [
     component: HomeComponent
   }, 
   {
-    path: 'users',
+    path: 'users/:id',
     component: UsersComponent
   }
 ];
