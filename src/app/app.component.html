@@ -175,12 +175,13 @@
 </div>
 
 <app-footer></app-footer> -->
-
+<h1>Service && API HTTP Get</h1>
 <div>
   <h3>Data in Header Component</h3>
   <tr *ngFor="let user of users">
     <td>{{ user.name }}</td>
     <td>{{ user.email }}</td>
+    <td>{{ user.company.name }}</td>
   </tr>
 </div>
 
