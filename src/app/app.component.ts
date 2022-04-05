@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { UserdataService } from './services/userdata.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'explore-angular';
+
+
   // users = ["habib", "Kabir", "Nixam", "Monu", "Mixin"];
   // data = 'Code Step By Step';
   // name = 'iqbal';
@@ -86,4 +89,16 @@ export class AppComponent {
   //     this.displayFailedSubmit = "All Field Must Be Fill Up";
   //   }
   // }
+
+
+  // showData: any = {}
+  // submitData(data: NgForm) {
+  //   console.log(data);
+  //   this.showData = data
+  // }
+  users : any = []
+  constructor (private userdata: UserdataService) {
+    console.dir(userdata.users())
+    this.users = userdata.users();
+  }
 }

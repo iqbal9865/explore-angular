@@ -133,6 +133,14 @@
   </form>
 </div> -->
 
+<!-- <form #formdata="ngForm" (ngSubmit)="submitData(formdata.value)" >
+  <input type="text" name="username" ngModel> <br><br>
+  <input type="email" name="email" ngModel> <br>
+  <button>SUBMIT</button>
+</form>
+<h1>{{showData.username }}</h1>
+<h1>{{showData.email}}</h1>
+
 <div>
   <a routerLink="/">
     Home
@@ -156,6 +164,15 @@
     User22
   </a>
 </div>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<div>
+  <h1>List Of Users</h1>
+  <ul *ngFor="let user of users">
+    <li>
+      {{ user.name }} -- {{ user.email }}
+    </li>
+  </ul>
+</div>
 
+<app-footer></app-footer>
 
