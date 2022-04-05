@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { UserdataService } from './services/userdata.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -96,9 +97,16 @@ export class AppComponent {
   //   console.log(data);
   //   this.showData = data
   // }
+  // users : any = []
+  // constructor (private userdata: UserdataService) {
+  //   console.dir(userdata.users())
+  //   this.users = userdata.users();
+  // }
+
   users : any = []
-  constructor (private userdata: UserdataService) {
-    console.dir(userdata.users())
-    this.users = userdata.users();
+  constructor (private userdata : UserdataService) {
+    userdata.users().subscribe((data) => {
+      this.users = data
+    })
   }
 }

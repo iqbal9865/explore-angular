@@ -165,7 +165,7 @@
   </a>
 </div>
 <router-outlet></router-outlet> -->
-<div>
+<!-- <div>
   <h1>List Of Users</h1>
   <ul *ngFor="let user of users">
     <li>
@@ -174,5 +174,14 @@
   </ul>
 </div>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->
 
+<div>
+  <h3>Data in Header Component</h3>
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+</div>
+
+<app-footer></app-footer>
